@@ -9,12 +9,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "index.js",
-      "headers": {
-        "X-Frame-Options": "ALLOWALL",  // Prevents iframe-related issues
-        "Access-Control-Allow-Origin": "*", // Allows CORS for all domains
-        "Cache-Control": "public, max-age=0, must-revalidate" // Prevents caching
-      }
+      "dest": "index.js"
     }
   ]
 }
